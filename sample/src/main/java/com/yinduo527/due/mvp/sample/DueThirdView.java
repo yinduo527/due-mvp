@@ -1,5 +1,6 @@
 package com.yinduo527.due.mvp.sample;
 
+import android.content.Intent;
 import android.view.View;
 import android.widget.TextView;
 
@@ -15,6 +16,13 @@ public class DueThirdView extends DueBaseView {
     protected View createView() {
         TextView textView = new TextView(getContext());
         textView.setText("third");
+        textView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), DueSampleFragmentActivity.class);
+                getActivity().startActivity(intent);
+            }
+        });
         return textView;
     }
 }

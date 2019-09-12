@@ -4,7 +4,7 @@ import android.os.Bundle;
 
 import com.yinduo527.due.mvp.DueBaseActivity;
 
-public class DueMvpActivity extends DueBaseActivity {
+public class DueSampleActivity extends DueBaseActivity {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
